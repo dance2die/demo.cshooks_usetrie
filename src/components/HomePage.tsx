@@ -15,6 +15,15 @@ const Header = styled.header`
   margin-bottom: 3rem;
 `;
 
+const DemoList = styled.ul`
+  list-style: none;
+  font-size: 2.5rem;
+
+  & li {
+    margin: 2rem;
+  }
+`;
+
 function HomePage() {
   return (
     <Container>
@@ -31,14 +40,14 @@ function HomePage() {
         </h1>
       </Header>
       <section>
-        <ul>
+        <DemoList>
           <li>
-            <Link to="string">String array demo</Link>
+            <Link to="string">📏 String array demo</Link>
           </li>
           <li>
-            <Link to="object">Object array demo</Link>
+            <Link to="object">🥔 Object array demo</Link>
           </li>
-        </ul>
+        </DemoList>
       </section>
     </Container>
   );
